@@ -174,7 +174,7 @@ box-shadow:0 0 20px #0284c7;
 
 .hero{
 
-min-height:70vh;
+min-height:90vh;
 
 display:flex;
 
@@ -186,7 +186,7 @@ align-items:center;
 
 text-align:center;
 
-padding:30px;
+padding:50px 20px;
 
 }
 
@@ -235,6 +235,42 @@ color:#082f49;
 }
 
 
+/* ================= PROFILE IMAGE ================= */
+
+
+.hero-image{
+
+margin-top:30px;
+
+}
+
+
+.hero-image img{
+
+width:220px;
+
+height:220px;
+
+object-fit:cover;
+
+border-radius:50%;
+
+border:6px solid #0369a1;
+
+box-shadow:0 10px 30px #0369a155;
+
+transition:.3s;
+
+}
+
+
+.hero-image img:hover{
+
+transform:scale(1.05);
+
+}
+
+
 
 
 
@@ -279,6 +315,20 @@ box-shadow:0 15px 30px #0369a188;
 
 
 
+.hero-buttons{
+
+display:flex;
+
+justify-content:center;
+
+flex-wrap:wrap;
+
+margin-top:20px;
+
+}
+
+
+
 
 .resume{
 
@@ -301,7 +351,6 @@ background:#0369a1;
 color:white;
 
 }
-
 
 
 
@@ -358,12 +407,6 @@ color:#082f49;
 line-height:1.8;
 
 }
-
-
-
-
-
-
 
 /* ================= SKILLS ================= */
 
@@ -464,7 +507,6 @@ gap:25px;
 
 
 
-
 .card{
 
 
@@ -553,6 +595,7 @@ color:#082f49;
 
 
 
+
 /* ================= FOOTER ================= */
 
 
@@ -591,8 +634,6 @@ color:white;
 
 
 
-/* Navbar */
-
 
 .dark nav{
 
@@ -627,7 +668,6 @@ color:white;
 color:#38bdf8;
 
 }
-
 
 
 
@@ -672,6 +712,14 @@ color:#e2e8f0;
 
 
 
+.dark .hero-image img{
+
+border-color:#38bdf8;
+
+box-shadow:0 10px 30px #38bdf855;
+
+}
+
 
 
 
@@ -713,7 +761,6 @@ color:#e2e8f0;
 
 
 
-
 /* Skills */
 
 
@@ -745,6 +792,7 @@ background:#0369a1;
 color:white;
 
 }
+
 
 
 
@@ -838,6 +886,15 @@ color:#020617;
 
 
 
+.dark footer{
+
+background:#000814;
+
+}
+
+
+
+
 
 
 
@@ -852,6 +909,8 @@ nav{
 
 flex-direction:column;
 
+padding:15px;
+
 }
 
 
@@ -859,11 +918,13 @@ flex-direction:column;
 nav ul{
 
 
-margin-top:20px;
+margin-top:15px;
 
 flex-direction:column;
 
 text-align:center;
+
+gap:15px;
 
 }
 
@@ -878,12 +939,50 @@ font-size:35px;
 
 
 
+.hero h2{
+
+
+font-size:22px;
+
+}
+
+
+
+.hero p{
+
+
+font-size:16px;
+
+}
+
+
+
+.hero-image img{
+
+
+width:170px;
+
+height:170px;
+
+}
+
+
+
 section{
 
 
 width:90%;
 
 padding:25px;
+
+}
+
+
+
+.button{
+
+
+padding:12px 25px;
 
 }
 
