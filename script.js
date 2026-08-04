@@ -1,23 +1,51 @@
+// ===============================
+// DARK MODE TOGGLE
+// ===============================
+
 const darkBtn = document.getElementById("darkBtn");
 
 
-darkBtn.onclick = () => {
+// Load saved theme
 
+if(localStorage.getItem("theme") === "dark"){
 
-document.body.classList.toggle("dark");
+    document.body.classList.add("dark");
 
-
-if(document.body.classList.contains("dark")){
-
-darkBtn.innerHTML="☀️";
-
-}
-
-else{
-
-darkBtn.innerHTML="🌙";
+    darkBtn.innerHTML = "☀️";
 
 }
 
 
-};
+
+// Toggle dark mode
+
+darkBtn.addEventListener("click",()=>{
+
+
+    document.body.classList.toggle("dark");
+
+
+    if(document.body.classList.contains("dark")){
+
+
+        darkBtn.innerHTML="☀️";
+
+
+        localStorage.setItem("theme","dark");
+
+
+    }
+
+    else{
+
+
+        darkBtn.innerHTML="🌙";
+
+
+        localStorage.setItem("theme","light");
+
+
+    }
+
+
+});
