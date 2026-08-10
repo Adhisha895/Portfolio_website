@@ -220,6 +220,8 @@ nav ul li a:hover::after{
 
     object-fit:cover;
 
+    object-position:25% 25%;
+
     border-radius:50%;
 
     border:6px solid #0369a1;
